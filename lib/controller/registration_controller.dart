@@ -50,7 +50,7 @@ abstract class RegistrationController {
     return result;
   }
 
-  Future<Entity> createEntity(Map<String, dynamic> mapaEntidade);
+  Future<Entity> createEntity(Map<String, dynamic> entityMap);
 
   Future<List<Entity>> createEntityList(result) async {
     List<Entity> entities = <Entity>[];

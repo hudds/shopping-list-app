@@ -21,7 +21,7 @@ class DatabaseAccess {
   }
 
   Future<Database> get database async{
-    if(_database ==  null || !_database!.isOpen){
+    if(_database ==  null){
       _database = await _openDatabaseConnection();
     }
     return _database!;
