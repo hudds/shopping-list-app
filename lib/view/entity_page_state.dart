@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lista_compras/controller/registration_operation.dart';
 
 mixin EntityPageState {
-  List<Widget> criarConteudoFormulario(BuildContext context);
+  List<Widget> createFormContent(BuildContext context);
 
   void transferDataToEntity();
 
@@ -23,7 +23,7 @@ mixin EntityPageState {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(5.0),
       child: Column(
-        children: criarConteudoFormulario(context) +
+        children: createFormContent(context) +
             [
               const SizedBox(
                 height: 20.0,
